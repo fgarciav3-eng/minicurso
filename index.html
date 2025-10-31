@@ -283,19 +283,23 @@
 
         .video-container {
             position: relative;
-            width: 100%;
-            max-width: 800px;
-            margin: 30px auto;
-            border-radius: 15px;
+            padding-bottom: 56.25%;
+            height: 0;
             overflow: hidden;
+            border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            margin: 30px auto;
+            max-width: 800px;
             background: #000;
         }
 
-        .video-container video {
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: auto;
-            display: block;
+            height: 100%;
+            border: none;
         }
 
         .formula {
@@ -502,15 +506,15 @@
 
                 <div class="section">
                     <h3>🎥 Video Tutorial Interactivo</h3>
-                    <p>📺 Observa cómo resolver ecuaciones de primer grado paso a paso con este video explicativo:</p>
+                    <p>📺 Observa cómo resolver ecuaciones de primer grado paso a paso:</p>
                     <div class="video-container">
-                        <video controls>
-                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-                            Tu navegador no soporta el elemento de video.
-                        </video>
+                        <iframe src="https://youtu.be/ogbBuRy1cns" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
                     </div>
                     <p style="text-align: center; color: #666; margin-top: 15px;">
-                        💡 <em>Nota: Video demostrativo. Practica los pasos mostrados en los ejemplos anteriores.</em>
+                        💡 <em>Observa cómo se resuelven las ecuaciones paso a paso.</em>
                     </p>
                 </div>
             </div>
@@ -588,15 +592,15 @@
 
                 <div class="section">
                     <h3>🎥 Video Tutorial Interactivo</h3>
-                    <p>📺 Aprende a resolver inecuaciones de primer grado con este video paso a paso:</p>
+                    <p>📺 Aprende a resolver inecuaciones de primer grado paso a paso:</p>
                     <div class="video-container">
-                        <video controls>
-                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
-                            Tu navegador no soporta el elemento de video.
-                        </video>
+                        <iframe src="https://youtu.be/ceNooG1tQoU" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
                     </div>
                     <p style="text-align: center; color: #666; margin-top: 15px;">
-                        💡 <em>Nota: Video demostrativo. Practica los pasos mostrados en los ejemplos anteriores.</em>
+                        💡 <em>Observa cómo se resuelven las inecuaciones paso a paso.</em>
                     </p>
                 </div>
             </div>
